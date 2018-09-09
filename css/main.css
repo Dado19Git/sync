@@ -327,7 +327,7 @@ section {
     left: 0;
     right: 0;
     z-index: 17;
-
+    display: none;
    /* border-bottom: 1px solid white; */
 }
 .view__grid--item:nth-child(5n + 1) .photo__caption {
