@@ -1,95 +1,54 @@
 html {
-	font-size: 1.6rem;
-}
-
-
-html {
-  	-webkit-box-sizing: border-box;
-  	-moz-box-sizing: border-box;
-  	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 *, *:before, *:after {
-  	-webkit-box-sizing: inherit;
-  	-moz-box-sizing: inherit;
-  	box-sizing: inherit;
-}	
-body {
-	background-color: #00002d;
-}
-html, body, main, section {
-	height: 100%;
-}	
-main, section {
-	position: relative;
-}
-section {
-	overflow: hidden;
-}
-
-
-
-
-
-.view__grid {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-
-    background-color: #00002d;
-    opacity: .9;
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
 }   
 
+body, html, section {
+    height: 100%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.view__grid--item {
-    float: left;
-    position: relative;
-    min-height: 1px;
+figure {
     margin: 0;
-    padding: 0;
 }
 
-.view__grid--item:nth-child(5n + 1) {
+article {
+    position: absolute;
+    overflow: hidden;
+}
+
+article:nth-of-type(5n+1) {
+    top: 0;
+    left: 0;
     width: 33.33333%;
     height: 66.66667%;
 }
-.view__grid--item:nth-child(5n + 2) {
+article:nth-of-type(5n+2) {
+    right: 0;
+    top: 0;
     width: 66.66667%;
     height: 33.33333%;
 }
-.view__grid--item:nth-child(5n + 3) {
+article:nth-of-type(5n+3) {
+    top: 33.33333%;
+    left: 33.33333%;
     width: 33.33333%;
     height: 33.33333%;
 }
-.view__grid--item:nth-child(5n + 4) {
+article:nth-of-type(5n+4) {
+    right: 0;
+    bottom: 0;
     width: 33.33333%;
     height: 66.66667%;
 }
-.view__grid--item:nth-child(5n + 5) {
-    top: -33.33333%;
+article:nth-of-type(5n+5) {
+    bottom: 0;
+    left: 0;
     width: 66.66667%;
     height: 33.33333%;
 }
@@ -98,315 +57,64 @@ section {
 
 
 
-
-
-
-
-
-
-
-
-
-
-.anima {
-    -webkit-animation-duration: 400ms;
-    animation-duration: 400ms;    
-    -webkit-animation-delay: 400ms;
-    animation-delay: 400ms;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;         
-}
-/* 3 */
-/* ZoomOut */
-@-webkit-keyframes zoomOut {
-    from {
-        opacity: 0;
-        transform: scale(1.5);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-@keyframes zoomOut {
-    from {
-        opacity: 0;
-        transform: scale(1.5);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-/* END */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* slideTop */
-@-webkit-keyframes slideTop {
-    from {
-        opacity: 0;
-        transform: translateY(-20%);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-@keyframes slideTop {
-    from {
-        opacity: 0;
-        transform: translateY(-20%)
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-/* END */
-
-
-
-
-
-/* slideBottom */
-@-webkit-keyframes slideBottom {
-    from {
-        opacity: 0;
-        transform: translateY(20%);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-@keyframes slideBottom {
-    from {
-        opacity: 0;
-        transform: translateY(20%);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-/* END */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* slideLeft */
-@-webkit-keyframes slideLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-20%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-@keyframes slideLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-20%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-/* END */
-
-
-/* slideRight */
-@-webkit-keyframes slideRight {
-    from {
-        opacity: 0;
-        transform: translateX(20%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-@keyframes slideRight {
-    from {
-        opacity: 0;
-        transform: translateX(20%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-/* END */
-
-
-
-.view__grid--link {
+article a {
     display: block;
-    width: 100%;
-    height: 100%;    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
-.view__grid--item .photo {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
+
+article figure {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+article:nth-of-type(5n+1) figure {
     background-repeat: no-repeat;
-    background-position: center;
-    margin: 0;
-    padding: 0;
-    z-index: 1; 
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);    
-    transition: all .5s cubic-bezier(.17,.67,.83,.67);
+    background-color: #00002d;
+    width: 1000px;
+    height: 1000px;
+    background-size: 1000px 1000px;
+    background-image: url('https://picsum.photos/1000/1000?image=1016'); 
 }
-.view__grid--item:hover .photo {
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0%); 
-}
-
-.view__grid--item:nth-child(5n + 1) .photo {
-    background-image: url('https://picsum.photos/1650/1050?image=1005');
-    -webkit-animation-name: slideTop;
-    animation-name: slideTop;     
-}
-.view__grid--item:nth-child(5n + 2) .photo {
-    background-image: url('https://picsum.photos/1650/1050?image=1006');
-    -webkit-animation-name: slideRight;
-    animation-name: slideRight;     
-}           
-.view__grid--item:nth-child(5n + 3) .photo {
-    background-image: url('https://picsum.photos/1650/1050?image=1008');
-    z-index: 15;
-    -webkit-animation-name: zoomOut;
-    animation-name: zoomOut;    
-}
-.view__grid--item:nth-child(5n + 4) .photo {
-    background-image: url('https://picsum.photos/1650/1050?image=1009');
-    -webkit-animation-name: slideBottom;
-    animation-name: slideBottom;      
-}       
-.view__grid--item:nth-child(5n + 5) .photo {
-    background-image: url('https://picsum.photos/1650/1050?image=1010');
-    -webkit-animation-name: slideLeft;
-    animation-name: slideLeft;     
-}       
-
-
-
-
-.view__grid--item .photo__caption {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 17;
-    display: none;
-   /* border-bottom: 1px solid white; */
-}
-.view__grid--item:nth-child(5n + 1) .photo__caption {
-    margin: 2rem 1rem;
-}
-.view__grid--item:nth-child(5n + 2) .photo__caption {
-    margin: 2rem;
-}
-.view__grid--item:nth-child(5n + 3) .photo__caption {
-    margin: 2rem;
-}
-.view__grid--item:nth-child(5n + 4) .photo__caption {
-    margin: 2rem 1rem;
-}
-.view__grid--item:nth-child(5n + 5) .photo__caption {
-    margin: 2rem;
+article:nth-of-type(5n+4) figure {
+    background-repeat: no-repeat;
+    background-color: #00002d;
+    width: 1000px;
+    height: 1000px;
+    background-size: 1000px 1000px; 
+    background-image: url('https://picsum.photos/1000/1000?image=1016'); 
 }
 
 
-
-.heading__caption--text {
-    font-size: 36px;
-    color: white;
+article:nth-of-type(5n+2) figure {
+    background-repeat: no-repeat;
+    background-color: #00002d;
+    width: 1480px;
+    height: 600px;
+    background-size: 1480px 600px;  
+    background-image: url('https://picsum.photos/1480/600?image=1016');     
+}
+article:nth-of-type(5n+5) figure {
+    background-repeat: no-repeat;
+    background-color: #00002d;
+    width: 1480px;
+    height: 600px;
+    background-size: 1480px 600px;      
+    background-image: url('https://picsum.photos/1480/600?image=1016');     
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.grid__border {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-}
-.grid__border--item {
-    position: absolute;
-    z-index: 30;
-}
-.grid__border--item:nth-child(4n + 1) {
-    left: 33.33333%;
-    width: 1px;
-    height: 66.66667%;
-    background-color: white;
-}
-.grid__border--item:nth-child(4n + 2) {
-    top: 33.33333%;
-    left: 33.33333%;
-    width: 66.66667%;
-    height: 1px;
-    background-color: white;
-}
-
-.grid__border--item:nth-child(4n + 3) {
-    top: 33.33333%;
-    left: 66.66667%;
-    width: 1px;
-    height: 66.66667%;
-    background-color: white;
-}
-
-.grid__border--item:nth-child(4n + 4) {
-    top: 66.66667%;
-    width: 66.66667%;
-    height: 1px;
-    background-color: white;
+article:nth-of-type(5n+3) figure {
+    background-repeat: no-repeat;
+    background-color: #00002d;
+    width: 800px;
+    height: 800px;
+    background-size: 800px 800px;       
+    background-image: url('https://picsum.photos/800/800?image=1016');  
 }
