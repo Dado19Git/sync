@@ -1,29 +1,137 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Test FormSpree.io</title>
-  </head>
-  <body>
-	  
-	<div id="formBlock">
-		<form id="someForm">
-			<label for="name">Name:</label> <input type="text" id="name"><br/>
-			<label for="email">Email:</label> <input type="email" id="email"><br/>
-			<label for="comments">Comments:</label> <br/>
-			<textarea id="comments"></textarea><br/>
-		<input type="submit">
-		</form>
-	</div>
-	<div id="thankyouBlock" style="display:none">
-		<p>
-			Thank you for filling out the form. I care a lot about it.
-		</p>
-	</div>
+<!doctype html>
+<html lang="en-US" class="app">
+<head>
+	<!-- Titile -->
+	<title>Fullpage JS</title>
+	<!-- Meta tags -->
+	<meta charset="utf-8"/>
+	<meta content="True" name="HandheldFriendly">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=EDGE"/>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+
+	<!-- CSS-->
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+	<!-- Script -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/vendors/easings.js"></script>
+	<script type="text/javascript" src="js/vendors/scrolloverflow.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 	
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="index.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+<body class="app">
 	
-  </body>
+	
+	<div class="loader visible"></div>
+
+
+
+
+
+	<div class="view__box--slide"></div>
+	<div class="view__box"></div>
+
+	<main id="fullpage-wrapp" role="main">
+		<section class="section" data-anchor="home">
+			<div class="contain">
+				<div class="inner">
+					<h1>Home</h1>		
+				</div>
+			</div>
+		</section>
+		<section class="section" data-anchor="about">
+			<div class="contain">
+				<div class="inner">
+					<div class="view-6--right">
+						<h1>About</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>	
+				</div>
+			</div>
+		</section>
+	    <section class="section" data-anchor="portfolio">
+	        <section class="slide" id="slide1" data-anchor="slideFirst">
+	            <section class="intro">
+					<div class="contain">
+						<div class="inner">
+							<h1>Slide 1</h1>		
+						</div>
+					</div>
+	            </section>
+	        </section>
+	        <section class="slide" id="slide2" data-anchor="slideSecond">
+	            <section class="intro">
+					<div class="contain">
+						<div class="inner">
+							<h1>Slide 2</h1>		
+						</div>
+					</div>
+	            </section>
+	        </section>        	        
+	    </section>
+	</main>
+
+
+	<div class="square__center ">
+		<svg class="viewSquare" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+
+		  	<defs>
+		    	<linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+		      		<stop offset="0%" stop-color="#ffffff" />
+		      		<stop offset="100%" stop-color="#33ffef" />
+		    	</linearGradient>
+		  	</defs>	
+
+		  	<defs>
+				<filter id="dropshadow" width="120%" height="120%">
+				  	<feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+				  		
+				  		<feOffset dx="2" dy="2" result="offsetblur"/>
+				  	
+				  		<feComponentTransfer>
+				   			<feFuncA type="linear" slope="0.5"/>
+				  		</feComponentTransfer>
+				  	
+				  		<feMerge> 
+				    		<feMergeNode/>
+				    		<feMergeNode in="SourceGraphic"/>
+				  		</feMerge>
+				</filter>		  		
+		  	</defs>	
+
+		  	<g>					
+		    <rect x="10" y="10" 
+		    	  width="80" 
+		    	  height="80" 
+				  rx="2" ry="2" 
+				  fill="url(#gradient)" 
+                  filter="url(#dropshadow)" />
+			</g>
+		</svg>	
+	</div>
+
+
+</body>
+</html>	
