@@ -4,7 +4,7 @@
 	$visitor_email = $_POST['email'];
 	$message = $_POST['message'];
 
-	$email_form = 'ns2.google.com';
+	$email_form = 'https://danijeldzakula.github.io/sync/';
 
 	$email_subject = "New form Submission";
 
