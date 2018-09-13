@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700&subset=latin-ext,vietnamese');
+
+
 html {
+    font-size: 62.5%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -7,114 +11,110 @@ html {
     -webkit-box-sizing: inherit;
     -moz-box-sizing: inherit;
     box-sizing: inherit;
-}   
+}
 
-body, html, section {
+
+html, body {
     height: 100%;
+    width: 100%;
 }
 
-figure {
+body {
+    font-size: 16px;
+    font-size: 1.6rem;
     margin: 0;
-}
-
-article {
-    position: absolute;
-    overflow: hidden;
-}
-
-article:nth-of-type(5n+1) {
-    top: 0;
-    left: 0;
-    width: 33.33333%;
-    height: 66.66667%;
-}
-article:nth-of-type(5n+2) {
-    right: 0;
-    top: 0;
-    width: 66.66667%;
-    height: 33.33333%;
-}
-article:nth-of-type(5n+3) {
-    top: 33.33333%;
-    left: 33.33333%;
-    width: 33.33333%;
-    height: 33.33333%;
-}
-article:nth-of-type(5n+4) {
-    right: 0;
-    bottom: 0;
-    width: 33.33333%;
-    height: 66.66667%;
-}
-article:nth-of-type(5n+5) {
-    bottom: 0;
-    left: 0;
-    width: 66.66667%;
-    height: 33.33333%;
+    padding: 0;  
+    -webkit-user-select: none;
+    -moz-user-select: none;  
+    -ms-user-select: none;  
+    user-select: none;     
 }
 
 
 
-
-
-article a {
+.contain:after, .wrapp:after, .clearfix:after, .wrapp__full:after {
+    content: " ";
     display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    zoom: 1;
 }
 
-article figure {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+.wrapp {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: table;
 }
 
-
-article:nth-of-type(5n+1) figure {
-    background-repeat: no-repeat;
-    background-color: #00002d;
-    width: 1000px;
-    height: 1000px;
-    background-size: 1000px 1000px;
-    background-image: url('https://picsum.photos/1000/1000?image=1016'); 
-}
-article:nth-of-type(5n+4) figure {
-    background-repeat: no-repeat;
-    background-color: #00002d;
-    width: 1000px;
-    height: 1000px;
-    background-size: 1000px 1000px; 
-    background-image: url('https://picsum.photos/1000/1000?image=1016'); 
+.contain {
+    width: 100%;
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 100%;
+    position: relative;
 }
 
 
-article:nth-of-type(5n+2) figure {
-    background-repeat: no-repeat;
-    background-color: #00002d;
-    width: 1480px;
-    height: 600px;
-    background-size: 1480px 600px;  
-    background-image: url('https://picsum.photos/1480/600?image=1016');     
-}
-article:nth-of-type(5n+5) figure {
-    background-repeat: no-repeat;
-    background-color: #00002d;
-    width: 1480px;
-    height: 600px;
-    background-size: 1480px 600px;      
-    background-image: url('https://picsum.photos/1480/600?image=1016');     
+.global__section {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
-article:nth-of-type(5n+3) figure {
-    background-repeat: no-repeat;
-    background-color: #00002d;
-    width: 800px;
-    height: 800px;
-    background-size: 800px 800px;       
-    background-image: url('https://picsum.photos/800/800?image=1016');  
+
+.global__main {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
+
+
+
+.contact__form {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 52px;
+    font-size: 5.2rem;
+    margin: 0;
+    text-align: center;
+    color: #131313;
+    font-weight: 700;
+    background-color: transparent;
+    letter-spacing: .15em;
+    text-shadow: 4px 4px 0px #fff, 6px 6px 0px rgba(54, 54, 54, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
