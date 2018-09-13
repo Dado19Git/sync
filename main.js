@@ -12,7 +12,7 @@ function sendForm() {
   }
 
   var request = new XMLHttpRequest();
-  request.open('POST', 'https://formspree.io/danijeldzakula1991@gmail.com', true);
+  request.open('POST', 'https://danijeldzakula.github.io', true);
   request.setRequestHeader('Content-Type', 'application/json');
   request.send(data);
 }
