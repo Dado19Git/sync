@@ -95,41 +95,7 @@
 
 
 	<div class="square__center ">
-		<svg class="viewSquare" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
 
-		  	<defs>
-		    	<linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-		      		<stop offset="0%" stop-color="#ffffff" />
-		      		<stop offset="100%" stop-color="#33ffef" />
-		    	</linearGradient>
-		  	</defs>	
-
-		  	<defs>
-				<filter id="dropshadow" width="120%" height="120%">
-				  	<feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
-				  		
-				  		<feOffset dx="2" dy="2" result="offsetblur"/>
-				  	
-				  		<feComponentTransfer>
-				   			<feFuncA type="linear" slope="0.5"/>
-				  		</feComponentTransfer>
-				  	
-				  		<feMerge> 
-				    		<feMergeNode/>
-				    		<feMergeNode in="SourceGraphic"/>
-				  		</feMerge>
-				</filter>		  		
-		  	</defs>	
-
-		  	<g>					
-		    <rect x="10" y="10" 
-		    	  width="80" 
-		    	  height="80" 
-				  rx="2" ry="2" 
-				  fill="url(#gradient)" 
-                  filter="url(#dropshadow)" />
-			</g>
-		</svg>	
 	</div>
 
 

@@ -35,13 +35,10 @@
             }  
             */
 
-        	console.log(anchorLink);
-            if (index == 1 || index == 2) {
-            	$('.view__box').text(anchorLink);
-            } else {
-            	$('.view__box').text('');
-            }  
-
+        	console.log(index);
+            if (index == 1 || index == 2 || index == 3) {
+            	$('.view__box').text('1 / '+ index +'');
+            }
         },
 
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
