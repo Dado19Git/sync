@@ -14,7 +14,7 @@ $(document).ready(function() {
 		
 		//send to formspree
 		$.ajax({
-			url:'danidzaki060@gmail.com',
+			url:'',
 			method:'POST',
 			data:{
 				name:name,
